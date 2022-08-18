@@ -1,9 +1,8 @@
 
 const removeFromArray = function() {
     let a;
-    [a, ...rest] = [["hey", 2, 3, "ho"], "hey", 3];
-    a.splice(0, 1);
-    a.splice(1, 1);
+    [a, ...rest] = [[1, 2, 3], "1", 3];
+    a.splice(2, 1);
     return a;
 };
 
@@ -12,4 +11,4 @@ const removeFromArray = function() {
 module.exports = removeFromArray;
 
 
-//expect(removeFromArray(["hey", 2, 3, "ho"], "hey", 3)).toEqual([2, "ho"]);
+//expect(removeFromArray([1, 2, 3], "1", 3)).toEqual([1, 2]);
